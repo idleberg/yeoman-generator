@@ -76,6 +76,10 @@ import { GeneratorCompat } from '@idleberg/yeoman-generator';
 export default class extends GeneratorCompat {}
 ```
 
+### `this.clack`
+
+For your convenience, the full `@clack/prompts` API is exposed within the class.
+
 ## Related 👫
 
 - [yeoman-adapter-clack](https://www.npmjs.com/package/yeoman-adapter-clack)
