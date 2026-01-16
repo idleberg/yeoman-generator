@@ -1,11 +1,10 @@
 # yeoman-generator
 
-> An opinionated drop-in replacement for Yeoman generators, using modern
-> libraries.
-
 [![License](https://img.shields.io/github/license/idleberg/yeoman-generator?color=blue&style=for-the-badge)](https://github.com/idleberg/yeoman-generator/blob/main/LICENSE)
 [![Version: npm](https://img.shields.io/npm/v/@idleberg/yeoman-generator?style=for-the-badge)](https://www.npmjs.org/package/@idleberg/yeoman-generator)
 ![GitHub branch check runs](https://img.shields.io/github/check-runs/idleberg/yeoman-generator/main?style=for-the-badge)
+
+An opinionated drop-in replacement for Yeoman generators, using modern libraries.
 
 **Features**
 
