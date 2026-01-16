@@ -70,7 +70,7 @@ export default class extends Generator {}
 
 #### `GeneratorCompat`
 
-For existing generators, you might want to use `GeneratorCompat` class. It also uses Clack for prompts, but adheres to the default prompting API, [Inquirer]. Take note of [these limitations](https://github.com/idleberg/yeoman-adapter-clack#limitations-%EF%B8%8F).
+For existing generators, you might want to use `GeneratorCompat` class. It also uses Clack for prompts, but adheres to the default prompting API, [Inquirer]. Take note of the [known limitations](https://github.com/idleberg/yeoman-adapter-clack#limitations-%EF%B8%8F).
 
 ```typescript
 import { GeneratorCompat } from '@idleberg/yeoman-generator';
