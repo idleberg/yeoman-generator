@@ -8,7 +8,13 @@
 		"type": "git",
 		"url": "git+https://github.com/idleberg/yeoman-generator.git"
 	},
-	"keywords": [],
+	"keywords": [
+		"yeoman-generator",
+		"clack-prompts",
+		"clack",
+		"eta",
+		"yeoman"
+	],
 	"type": "module",
 	"exports": {
 		".": {
