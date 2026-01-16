@@ -80,7 +80,7 @@ export default class extends GeneratorCompat {}
 
 #### Clack APU
 
-For your convenience, the full Clack prompts API is exposed via the class property `this.clack`.
+For your convenience, the full [Clack prompts API][Clack] is exposed via the class property `this.clack`.
 
 ## Related 👫
 
