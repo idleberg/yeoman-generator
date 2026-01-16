@@ -53,6 +53,11 @@ export default class extends Generator {
 }
 ```
 
+> [!IMPORTANT]
+>
+> While this generator aims at being API-compatibility, you still need to be aware of the suble differences in the ETA template engine. See [ETA vs EJS](https://eta.js.org/docs/2.x.x/about/eta-vs-ejs) for details.
+
+
 ### `Generator`
 
 For new generators, it's recommended to import the `Generator` class. Except for the prompts, it follows the default Yeoman generator API. Refer to the [Clack docs][Clack] on how to use prompts.
@@ -72,11 +77,6 @@ import { GeneratorCompat } from '@idleberg/yeoman-generator';
 
 export default class extends GeneratorCompat {}
 ```
-
-> [!TIP]
->
-> While this generator aims at being API-compatible where possible, you still need to be aware of the suble differences in the ETA template engine. See [ETA vs EJS](https://eta.js.org/docs/2.x.x/about/eta-vs-ejs) for details.
-
 ## License ©️
 
 This work is licensed under [The MIT License](LICENSE).
