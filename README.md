@@ -78,9 +78,9 @@ import { GeneratorCompat } from '@idleberg/yeoman-generator';
 export default class extends GeneratorCompat {}
 ```
 
-#### `this.clack`
+#### Clack APU
 
-For your convenience, the full `@clack/prompts` API is exposed within the class.
+For your convenience, the full Clack prompts API is exposed via the class property `this.clack`.
 
 ## Related 👫
 
