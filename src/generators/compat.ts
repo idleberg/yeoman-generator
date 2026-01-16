@@ -1,0 +1,31 @@
+import { ClackCompatAdapter } from 'yeoman-adapter-clack';
+import type { BaseOptions, PromptAnswers, PromptQuestions, Storage } from 'yeoman-generator';
+import { BaseGenerator } from './base.ts';
+
+/**
+ * Generator for using Clack prompts with Inquirer-compatible API.
+ *
+ * This generator accepts standard Inquirer question properties and maps them
+ * to Clack prompts internally. It provides compatibility with existing Yeoman
+ * generators that use Inquirer.
+ *
+ * For pure Clack API with Clack-specific options, use {@see ClackGenerator} instead.
+ */
+export class GeneratorCompat extends BaseGenerator {
+	constructor(args?: string | string[], opts?: BaseOptions) {
+		super(ClackCompatAdapter, args, opts);
+	}
+
+	override async prompt<A extends PromptAnswers = PromptAnswers>(
+		questions: PromptQuestions<A>,
+		storage?: Storage | string,
+	): Promise<A> {
+		const questionsArray = Array.isArray(questions) ? questions : [questions];
+		const questionsWithDefaults = this.loadSession(questionsArray, storage);
+		const answers = (await this.env.adapter.prompt(questionsWithDefaults as any)) as A;
+
+		this.saveSession(questionsArray, answers, storage);
+
+		return answers;
+	}
+}
