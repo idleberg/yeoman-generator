@@ -40,7 +40,7 @@
 		"prepare": "lefthook install",
 		"publish:jsr": "deno publish",
 		"publish:npm": "np --any-branch",
-		"test": "vitest run"
+		"test": "#vitest run"
 	},
 	"dependencies": {
 		"@yeoman/adapter": "^4.0.1",
