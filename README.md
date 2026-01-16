@@ -1,6 +1,6 @@
 # yeoman-generator
 
-> An opinionated drop-in replacements for Yeoman generators, using modern
+> An opinionated drop-in replacement for Yeoman generators, using modern
 > libraries.
 
 [![License](https://img.shields.io/github/license/idleberg/yeoman-generator?color=blue&style=for-the-badge)](https://github.com/idleberg/yeoman-generator/blob/main/LICENSE)
