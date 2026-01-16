@@ -23,9 +23,6 @@ importers:
       kleur:
         specifier: ^4.1.5
         version: 4.1.5
-      mem-fs:
-        specifier: ^4.1.3
-        version: 4.1.3
       mem-fs-editor:
         specifier: ^11.1.4
         version: 11.1.4(mem-fs@4.1.3)
