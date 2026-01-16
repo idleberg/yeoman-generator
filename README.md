@@ -68,7 +68,7 @@ export default class extends Generator {}
 
 ### `GeneratorCompat`
 
-For existing generators, you might want to use `GeneratorCompat` class. It still allows using Clack for prompts, but does so following prompting API (Yeoman uses [Inquirer] by default!)
+For existing generators, you might want to use `GeneratorCompat` class. It still allows using Clack for prompts, but does so following the default prompting API (Yeoman uses [Inquirer])
 
 ```typescript
 import { GeneratorCompat } from '@idleberg/yeoman-generator';
