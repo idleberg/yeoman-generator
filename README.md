@@ -1,25 +1,86 @@
-# node-package-template
+# yeoman-generator
 
-> Just my personal package template.
+> An opinionated drop-in replacements for Yeoman generators, using modern
+> libraries.
 
-[![License](https://img.shields.io/github/license/idleberg/node-package-template?color=blue&style=for-the-badge)](https://github.com/idleberg/node-package-template/blob/main/LICENSE)
-[![Version: npm](https://img.shields.io/npm/v/@idleberg/node-package-template?style=for-the-badge)](https://www.npmjs.org/package/@idleberg/node-package-template)
-![GitHub branch check runs](https://img.shields.io/github/check-runs/idleberg/node-package-template/main?style=for-the-badge)
+[![License](https://img.shields.io/github/license/idleberg/yeoman-generator?color=blue&style=for-the-badge)](https://github.com/idleberg/yeoman-generator/blob/main/LICENSE)
+[![Version: npm](https://img.shields.io/npm/v/@idleberg/yeoman-generator?style=for-the-badge)](https://www.npmjs.org/package/@idleberg/yeoman-generator)
+![GitHub branch check runs](https://img.shields.io/github/check-runs/idleberg/yeoman-generator/main?style=for-the-badge)
 
-A template with highly opinionated configuration. Works for me, maybe not for you!
+**Features**
+
+- uses [Clack][Clack] for prompting
+- uses [ETA][Eta] as template engine
 
 ## Installation 💿
 
-In GitHub, click on *"Use this template"* to create a new repo from this template. Alternatively, you can use `degitly`.
-
 ```shell
-npx degitly idleberg/node-package-template
+npm i @idleberg/yeoman-generator
 ```
 
 ## Usage 🚀
 
-That's the one thing you have to figure out!
+**Example**
+
+```typescript
+import { Generator } from '@idleberg/yeoman-generator';
+
+export default class extends Generator {
+	async prompting() {
+		this.clack.intro(inverse('Welcome to the generator!'));
+
+		const answers = await this.prompt([
+			{
+				type: 'text',
+				name: 'name',
+				message: 'What is your name?',
+				placeholder: 'John Appleseed',
+				validate: (value) => {
+					if (value.length < 2) return 'Name must be at least 2 characters';
+					return undefined;
+				},
+			},
+		]);
+
+		this.answers = answers
+	}
+
+	async writing() {
+		this.fs.copyTpl(this.templatePath('index.eta'), this.destinationPath('index.html'), {
+			...this.answers,
+		});
+	}
+}
+```
+
+### `Generator`
+
+For new generators, it's recommended to import the `Generator` class. Except for the prompts, it follows the default Yeoman generator API. Refer to the [Clack docs][Clack] on how to use prompts.
+
+```typescript
+import { Generator } from '@idleberg/yeoman-generator';
+
+export default class extends Generator {}
+```
+
+### `GeneratorCompat`
+
+For existing generators, you might want to use `GeneratorCompat` class. It still allows using Clack for prompts, but does so following prompting API (Yeoman uses [Inquirer] by default!)
+
+```typescript
+import { GeneratorCompat } from '@idleberg/yeoman-generator';
+
+export default class extends GeneratorCompat {}
+```
+
+> [!TIP]
+>
+> While this generator aims at being API-compatible where possible, you still need to be aware of the suble differences in the ETA template engine. See [ETA vs EJS](https://eta.js.org/docs/2.x.x/about/eta-vs-ejs) for details.
 
 ## License ©️
 
 This work is licensed under [The MIT License](LICENSE).
+
+[Clack]: https://bomb.sh/docs/clack/packages/prompts/
+[Eta]: https://eta.js.org/
+[Inquirer]: https://github.com/SBoudrias/Inquirer.js
