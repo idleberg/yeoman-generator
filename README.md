@@ -76,6 +76,11 @@ import { GeneratorCompat } from '@idleberg/yeoman-generator';
 
 export default class extends GeneratorCompat {}
 ```
+
+## Related 👫
+
+- [yeoman-adapter-clack](https://www.npmjs.com/package/yeoman-adapter-clack)
+
 ## License ©️
 
 This work is licensed under [The MIT License](LICENSE).
