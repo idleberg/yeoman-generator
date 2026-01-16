@@ -55,8 +55,7 @@ export default class extends Generator {
 
 > [!IMPORTANT]
 >
-> While this generator aims at being API-compatibility, you still need to be aware of the suble differences in the ETA template engine. See [ETA vs EJS](https://eta.js.org/docs/2.x.x/about/eta-vs-ejs) for details.
-
+> While these generators aim at API-compatibility, you still need to be aware of the suble differences in the ETA template engine. See [ETA vs EJS](https://eta.js.org/docs/2.x.x/about/eta-vs-ejs) for details.
 
 ### `Generator`
 
