@@ -26,7 +26,7 @@ import { Generator } from '@idleberg/yeoman-generator';
 
 export default class extends Generator {
 	async prompting() {
-		this.clack.intro(inverse('Welcome to the generator!'));
+		this.clack.intro('Welcome to the generator!');
 
 		const answers = await this.prompt([
 			{
