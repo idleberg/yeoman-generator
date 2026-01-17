@@ -33,6 +33,7 @@ export function _processTpl(
 		const etaConfig: Partial<EtaConfig> = {
 			cache: tplSettings.cache ?? true,
 			autoEscape: tplSettings.autoEscape ?? false,
+			autoTrim: tplSettings.autoTrim ?? false,
 		};
 
 		// Only add tags if they're defined

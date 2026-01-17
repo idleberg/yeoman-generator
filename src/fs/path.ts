@@ -21,6 +21,7 @@ export function renderDestinationPath(destPath: string, context: any, tplSetting
 		const etaConfig: Partial<EtaConfig> = {
 			cache: false, // Don't cache destination paths
 			autoEscape: false,
+			autoTrim: false,
 		};
 
 		// Only add tags if they're defined
