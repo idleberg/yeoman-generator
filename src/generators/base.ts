@@ -5,6 +5,8 @@ import type { BaseOptions, Storage } from 'yeoman-generator';
 import YeomanGenerator from 'yeoman-generator';
 import { appendTpl, copyTpl, copyTplAsync } from '../fs/api.ts';
 
+export type { PromptAnswers } from 'yeoman-generator';
+
 /**
  * Base generator class that provides shared functionality for Clack-based generators.
  */
