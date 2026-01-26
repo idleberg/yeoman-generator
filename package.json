@@ -1,6 +1,6 @@
 {
 	"name": "@idleberg/yeoman-generator",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "An opinionated drop-in replacement for Yeoman generators, using modern libraries",
 	"license": "MIT",
 	"author": "Jan T. Sott",
