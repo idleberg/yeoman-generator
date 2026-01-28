@@ -48,12 +48,12 @@
 		"is-binary-path": "^3.0.0",
 		"kleur": "^4.1.5",
 		"mem-fs-editor": "^11.1.4",
-		"yeoman-adapter-clack": "^0.1.2",
+		"yeoman-adapter-clack": "^0.2.0",
 		"yeoman-environment": "^5.1.2",
 		"yeoman-generator": "^7.5.1"
 	},
 	"devDependencies": {
-		"@clack/prompts": "^0.11.0",
+		"@clack/prompts": "^1.0.0",
 		"@commitlint/cli": "^20.3.1",
 		"@commitlint/config-conventional": "^20.3.1",
 		"@e18e/cli": "^0.3.1",
