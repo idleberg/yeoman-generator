@@ -28,3 +28,5 @@ export class Generator extends BaseGenerator {
 		return answers;
 	}
 }
+
+export type { ClackPromptOptions };
