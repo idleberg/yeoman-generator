@@ -23,7 +23,7 @@
 		}
 	},
 	"engines": {
-		"node": ">=20"
+		"node": ">=22.21.0"
 	},
 	"files": [
 		"dist/",
@@ -42,30 +42,30 @@
 		"test": "#vitest run"
 	},
 	"dependencies": {
-		"@yeoman/adapter": "^4.0.1",
+		"@yeoman/adapter": "^4.0.2",
 		"glob": "^13.0.6",
 		"is-binary-path": "^3.0.0",
 		"kleur": "^4.1.5",
-		"mem-fs-editor": "^11.1.4",
-		"yeoman-adapter-clack": "^0.2.2",
-		"yeoman-environment": "^5.1.3",
-		"yeoman-generator": "^7.5.1"
+		"mem-fs-editor": "^12.0.3",
+		"yeoman-adapter-clack": "^0.3.0",
+		"yeoman-environment": "^6.0.0",
+		"yeoman-generator": "^8.1.2"
 	},
 	"devDependencies": {
-		"@clack/prompts": "^1.0.1",
-		"@commitlint/cli": "^20.4.2",
-		"@commitlint/config-conventional": "^20.4.2",
+		"@clack/prompts": "^1.1.0",
+		"@commitlint/cli": "^20.5.0",
+		"@commitlint/config-conventional": "^20.5.0",
 		"@idleberg/configs": "^0.4.2",
-		"@types/node": "^24.10.0",
-		"@vitest/coverage-v8": "^4.0.18",
+		"@types/node": "^24.12.0",
+		"@vitest/coverage-v8": "^4.1.2",
 		"concurrently": "^9.2.1",
 		"np": "^11.0.2",
-		"tsdown": "0.20.3",
-		"typescript": "^5.9.3",
-		"vitest": "^4.0.18"
+		"tsdown": "0.21.7",
+		"typescript": "^6.0.2",
+		"vitest": "^4.1.2"
 	},
 	"peerDependencies": {
-		"@clack/prompts": "^1.0.0",
+		"@clack/prompts": "^1.1.0",
 		"eta": "^4.5.0"
 	},
 	"pnpm": {
