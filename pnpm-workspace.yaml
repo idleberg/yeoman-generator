@@ -4,8 +4,10 @@ publicHoistPattern:
   - "*@e18e/cli*"
   - "*@total-typescript/tsconfig*"
   - "*lefthook*"
+
 allowBuilds:
   esbuild: false
   lefthook: true
+
 minimumReleaseAgeExclude:
   - yeoman-adapter-clack

@@ -42,25 +42,25 @@
 		"test": "#vitest run"
 	},
 	"dependencies": {
-		"@yeoman/adapter": "^5.0.0",
+		"@yeoman/adapter": "^5.1.0",
 		"glob": "^13.0.6",
 		"is-binary-path": "^3.0.0",
 		"kleur": "^4.1.5",
-		"mem-fs-editor": "^12.0.8",
-		"yeoman-adapter-clack": "^0.5.1",
-		"yeoman-environment": "^6.3.0",
-		"yeoman-generator": "^8.3.1"
+		"mem-fs-editor": "^12.1.0",
+		"yeoman-adapter-clack": "^0.5.2",
+		"yeoman-environment": "^8.2.0",
+		"yeoman-generator": "^10.2.0"
 	},
 	"devDependencies": {
-		"@clack/prompts": "^1.7.0",
-		"@commitlint/cli": "^21.2.2",
-		"@commitlint/config-conventional": "^21.2.2",
+		"@clack/prompts": "^1.8.1",
+		"@commitlint/cli": "^21.2.4",
+		"@commitlint/config-conventional": "^21.2.4",
 		"@idleberg/configs": "^0.4.6",
-		"@types/node": "^26.4.1",
+		"@types/node": "^26.6.5",
 		"@vitest/coverage-v8": "^5.0.0",
 		"concurrently": "^10.0.5",
 		"np": "^12.1.0",
-		"tsdown": "0.23.0",
+		"tsdown": "0.23.1",
 		"typescript": "^6.0.3",
 		"vitest": "^5.0.0"
 	},
